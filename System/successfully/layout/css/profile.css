@@ -1,0 +1,301 @@
+body {
+  overflow-x: hidden;
+}
+/*
+ ========================================
+  - Profile Content Main:
+ ========================================
+*/
+.profile-content {
+  padding: 25px;
+  height: auto;
+  background-color: #f1f1f1;
+}
+.profile-content > h1 {
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+}
+.profile-content table {
+  border-collapse: collapse;
+  border-width: .5px;
+  width: 100%;
+}
+.profile-content td, .profile-content th {
+  padding: 15px;
+  border: 1px solid #dddddd;
+  text-align: left;
+}
+.profile-content tr:nth-child(1) {
+  background-color: #022237;
+  color: #FFF;
+  font-weight: 300
+}
+.profile-content table button {
+  width: 65%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  text-transform: none;
+  margin: 0 auto;
+}
+
+/*
+ ========================================
+  - Edit Form On Profile Content Main:
+ ========================================
+*/
+.edit-form {
+  padding: 15px;
+  margin-top: 50px;
+  display: none;
+}
+.edit-form > h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300
+}
+
+/*
+ ========================================
+  - Successfully Update Div On Profile
+    Content Main:
+ ========================================
+*/
+.profile-content .updated {
+  background-color: #2ecc71 !important;
+  padding: 15px;
+  width: 60%;
+  margin: 50px auto;
+  margin-left: 200px;
+  text-align: center;
+  border-radius: 5px;
+  color: #FFF;
+  box-shadow: 0 1.5px 8px #000;
+  position: fixed;
+  top: 0;
+  z-index: 9999999;
+}
+.profile-content .updated i {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 10px;
+  cursor: pointer;
+}
+
+/*
+ ========================================
+  - Errors Update Div On Profile
+    Content Main:
+ ========================================
+*/
+.updates-errors {
+  padding: 20px 0 12px 75px;
+  color: #FFF;
+  background-color: rgba(231, 76, 60, .6);
+  border-left: 4px solid #e74c3c;
+  margin-top: 10px;
+  position: relative;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.updates-errors h4 {
+  padding: 5px;
+}
+.updates-errors i.close-update-error {
+  height: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+.updates-errors i.close-update-error:hover { color: #ccc }
+/*
+ ========================================
+  - Profile Card On Profile Content Main:
+ ========================================
+*/
+.profile-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  width: 50%;
+  margin: 15px auto;
+  text-align: center;
+  padding: 15px;
+}
+.profile-card > i {
+  background-color: #f1f1f1;
+  color: #999;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  line-height: 130px;
+}
+.profile-card .info-card {
+  text-align: left;
+  margin-top: 35px;
+  color: #777;
+}
+.profile-card .info-card h4 {
+  font-weight: 400;
+  margin-bottom: 8px;
+  color: #000;
+  padding: 15px;
+}
+.profile-card .info-card hr {
+  margin-bottom: 8px;
+  border-color: #999
+}
+.profile-card .info-card h4 span {
+  float: right;
+  color: #777;
+  font-weight: 600;
+}
+
+/*
+ ========================================
+  - About Page Style :
+ ========================================
+*/
+.about-page {
+
+}
+.about-page > h1 {
+  margin-bottom: 10px;
+  font-size: 52px;
+}
+.about-page > p {
+  text-transform: capitalize;
+  font-size: 30px;
+  color: #AAA;
+  margin-bottom: 25px;
+}
+.about-page > ul {
+  padding-left: 54px;
+  font-size: 19px;
+}
+.about-page > ul li {
+  padding-bottom: 6px;
+}
+.about-page .faqs {
+  background-color: #f1f1f1;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-left: 15px;
+  width: 95%;
+  margin: auto;
+}
+.about-page .faqs > h1 {
+  padding: 15px;
+  padding-left: 25px;
+  font-size: 25px;
+  color: #333;
+  cursor: pointer;
+  transition: 0.5s;
+  font-weight: 500;
+}
+.about-page .faqs > h1:hover {
+  color: #000;
+}
+.about-page .f-q,
+.about-page .s-q,
+.about-page .t-q,
+.about-page .fo-q {
+  line-height: 1.5em;
+  display: none;
+  padding-left: 51px;
+}
+.about-page .f-q a,
+.about-page .s-q a,
+.about-page .t-q a {
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: 800;
+}
+.about-page .f-q a:hover {
+  text-decoration: underline;
+  color: #022237;
+}
+.about-page .f-q p,
+.about-page .s-q p,
+.about-page .t-q p,
+.about-page .fo-q p { margin-bottom: 10px; font-size: 19px; }
+
+/*
+ ========================================
+  - About Page Style [ Card Team ]
+ ========================================
+*/
+.team-card table, td, th {
+    border: 1px solid #ddd;
+    text-align: left;
+}
+.team-card table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px;
+}
+.team-card th, td {
+    padding: 15px;
+}
+.team-card tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+.team-card tr a {
+  text-decoration: none;
+  color: #022237;
+  font-weight: 900;
+}
+.team-card tr a:hover {
+  color: #2c3e50;
+  text-decoration: none;
+}
+
+/*
+ ========================================
+  - Team Page To Show People On Team
+ ========================================
+*/
+.team .infosopt {
+  padding-left: 15px;
+  z-index: 0;
+}
+.team .infosopt h1 {
+  font-weight: 400;
+  color: #333;
+  background-color: #2ecc71;
+  color: #FFF;
+  padding: 15px;
+  width: 30%;
+  position: relative;
+  border-radius: 3px;
+  font-size: 20px;
+  box-shadow: 1px 1px 5px 1px #ddd;
+}
+.team .infosopt h1:after {
+  content: "";
+  border-width: 15px;
+  border-style: solid;
+  border-color: #2ecc71 transparent transparent transparent;
+  position: absolute;
+  top: 51px;
+}
+.team .infosopt p {
+  margin-bottom: 15px;
+  margin-top: 16px;
+  padding-left: 10px;
+}
+.team .infosopt p a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 900;
+}
+.team .infosopt p strong {
+  color: #022237;
+}

@@ -1,0 +1,42 @@
+body {
+  background-color: #f8f9f9
+}
+/*
+  ===================================
+    - Navigation Bar File Style
+  ===================================
+*/
+.nav-admin {
+  background-color: #2c3e50;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 2.5px 2.5px 6px #ddd
+}
+.nav-admin h1 {
+  height: 0;
+  color: #FFF;
+  font-weight: 300;
+  position: absolute;
+  top: 0;
+  font-size: 30px;
+  margin-top: 12px;
+}
+.nav-admin ul {
+  list-style: none;
+  float: right;
+}
+.nav-admin li {
+  float: left;
+  padding: 4px;
+}
+.nav-admin li a {
+  padding: 13px 15px 10px;
+  text-decoration: none;
+  color: #FFF;
+  transition: 0.5s;
+  background-color: #34495e;
+  border-radius: 3px;
+}
+.nav-admin li a:hover { background-color: #022237; }

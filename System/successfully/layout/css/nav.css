@@ -1,0 +1,116 @@
+.navbar {
+  background-color: #022237;
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999999999999;
+  box-shadow: 2px 2px 5px;
+  margin-bottom: 25px;
+}
+.navbar > h1 {
+  height: 0;
+  color: #FFF;
+  position: relative;
+  top: 7px;
+  text-transform: capitalize;
+  font-weight: lighter;
+}
+.navbar ul {
+  list-style: none;
+  display: inline-block;
+  float: right;
+}
+.navbar ul li {
+  float: left;
+  padding: 15px;
+  transition: 0.5s;
+  cursor: pointer;
+  border-radius: 1px;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: #FFF;
+}
+.navbar ul li:hover {
+  background-color: #2c3e50
+}
+.navbar .dropdown {
+  position: fixed;
+  right: 0;
+  margin-top: 65px;
+  width: 30%;
+  background-color: #022237;
+  box-shadow: 4px 6px 10px #555;
+  display: none;
+  border-top: 3px solid #2980b9;
+  z-index: 9999999999999;
+}
+.navbar .dropdown a {
+  display: block;
+  padding: 15px 5px 15px 20px;
+  color: #FFF;
+  font-weight: 300;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.navbar .dropdown a i { float: right; margin-right: 15px;}
+.navbar .dropdown a:hover {
+  background-color: #2c3e50;
+}
+.navbar .dropdown a:first-child { margin-top: 15px; }
+.navbar .dropdown a:last-child { margin-bottom: 15px; }
+
+.tool-website {
+  position: fixed;
+  right: 0;
+  margin: 15px;
+  bottom: 0
+}
+.tool-website > i {
+  border-radius: 50%;
+  padding: 10px;
+  height: 80px;
+  width: 80px;
+  background-color: #022237;
+  color: #FFF;
+  text-align: center;
+  line-height: 60px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.tool-website > i:hover {
+  box-shadow: 4px 4px 15px #999, -4px -4px 15px #999;
+}
+.tool-website .options {
+  background-color: #022237;
+  margin: 0 5px 25px;
+  color: #FFF;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: none;
+}
+.tool-website .options i {
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  margin: 5px 0 15px;
+  padding: 10px;
+  transition: .5s;
+  position: relative;
+}
+.tool-website .options i:hover {
+  background-color: #2c3e50
+}
+.tool-website .options i:hover:after {
+  content: attr(text);
+  position: absolute;
+  background-color: #022237;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  right: 75px;
+  font-family: 'Roboto';
+  width: 250px
+}
