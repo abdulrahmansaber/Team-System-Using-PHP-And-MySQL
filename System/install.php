@@ -14,7 +14,7 @@
     // Create Table
       $query = $connect->prepare("
       CREATE TABLE `teamcheck` (
-        `id` int(11) NOT NULL,
+        `id` int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
         `name` varchar(255) NOT NULL,
         `pass` varchar(255) NOT NULL,
         `status` int(5) NOT NULL DEFAULT '0',
