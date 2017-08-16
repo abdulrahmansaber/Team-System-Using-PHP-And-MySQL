@@ -27,31 +27,41 @@ body {
 
 .acc-form {
   padding: 100px 0 0;
-  text-align: center;
+  font-family: 'Arial', sans-serif;
 }
-.acc-form > h1 {
+.acc-form .form h1 {
   font-size: 35px;
   color: #FFF;
-  margin: 15px 0 25px;
+  margin: 15px 0 15px;
   font-weight: lighter;
+  margin-left: 5px;
 }
+.acc-form section .form { width: 70%; margin: auto; }
 .acc-form section .form input {
   background-color: #555;
   border: none;
-  color: #FFF
+  color: #FFF;
+  border-radius: 1px;
+  margin: 5px;
 }
 .acc-form section .form button {
-  width: 50%;
+  text-align: left;
+  margin-left: 5px;
+  padding: 15px;
 }
-/*
-  Error Div
-*/
+/* Error Div */
 .error {
   background-color: #e74c3c;
   padding: 15px;
-  text-align: center;
-  width: 45%;
+  width: 100%;
   margin: 15px auto;
-  border-radius: 6px;
-  box-shadow: 2px 1.5px 10px #000, -2px -1.5px 10px #000
+}
+
+@media (max-width: 795px) {
+  .acc-form section .form {
+    width: 85%;
+  }
+  .acc-form section .form input {
+    width: 95%;
+  }
 }
